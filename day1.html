@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main {
+            margin: 5.6%;
+            margin-top: 0px;
+            background: linear-gradient(to top right, #43389F, #4ec6ca);
+            aspect-ratio: 1 / 1;
+            border-radius: 5px;
+
+            color: white;
+            text-align: center;
+
+            display: grid;
+            flex-direction: column;
+            align-items: center;
+
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        p {
+            grid-area: 1 / 1 / 1 / 1;
+        }
+
+        .shadow {
+            box-shadow: 0px 0px 5px 2px hsla(0, 0%, 0%, 0.1);
+        }
+
+        .zero {
+            background-color: transparent;
+            border: 5.5vw solid white;
+            width: 11.5vw;
+            display: inline-block;
+            border-radius: 100vw;
+            aspect-ratio: 1;
+        }
+
+        :nth-child(1 of .zero) {
+            border-color: white;
+            transform: translate(-1.5vw, 0vw);
+            margin-top: 11vw;
+            position: relative;
+            z-index: 1;
+        }
+
+        :nth-child(2 of .zero) {
+            border-color: white;
+            transform: translate(-7vw, 0vw);
+        }
+
+        .diag {
+            display: inline-block;
+            width: 4.5vw;
+            height: 9.9vw;
+            background-color: white;
+            border-radius: .75vw;
+            transform: translate(3vw, -12.4vw) rotateZ(50deg);
+            position: relative;
+            z-index: 1;
+        }
+
+        .i {
+            display: inline-block;
+            width: 5.5vw;
+            height: 22vw;
+            background-color: white;
+            border-radius: .75vw;
+            transform: translate(1vw, 0vw);
+            position: relative;
+            z-index: 2;
+        }
+
+        .days {
+            display: block;
+            font-size: 18vw;
+            margin-top: -2vw;
+        }
+
+        .challenge {
+            display: inline-block;
+            font-size: 5.4vw;
+            transform: translateY(-4vw);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>
+            <span class="diag shadow"></span>
+            <span class="i shadow"></span>
+            <span class="zero shadow"></span>
+            <span class="zero shadow"></span>
+            <span class="days">Days</span>
+            <span class="challenge">CSS challenge</span>
+        </p>
+    </main>
+</body>
+
+</html>
